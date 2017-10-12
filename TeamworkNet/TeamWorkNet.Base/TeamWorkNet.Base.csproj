@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2549B85-8B85-4AB8-BD11-0F2FA43C921B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TeamWorkNet.Base</RootNamespace>
+    <AssemblyName>TeamWorkNet.Base</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\..\Work\_codeplex\teamwork\TeamworkOutlook\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AuthorizedHttpClient.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Generic\MilestoneType.cs" />
+    <Compile Include="Generic\RequestFormat.cs" />
+    <Compile Include="Generic\TaskSearchType.cs" />
+    <Compile Include="Handler\AccountHandler.cs" />
+    <Compile Include="Handler\ActivityHandler.cs" />
+    <Compile Include="Handler\BaseHandler.cs" />
+    <Compile Include="Handler\PeopleHandler.cs" />
+    <Compile Include="Handler\CategoryHandler.cs" />
+    <Compile Include="Handler\CompanyHandler.cs" />
+    <Compile Include="Handler\FileHandler.cs" />
+    <Compile Include="Handler\MilestoneHandler.cs" />
+    <Compile Include="Handler\CalendarHandler.cs" />
+    <Compile Include="Handler\TagHandler.cs" />
+    <Compile Include="Handler\TasklistHandler.cs" />
+    <Compile Include="Handler\Taskhandler.cs" />
+    <Compile Include="Handler\TodoListHandler.cs" />
+    <Compile Include="Handler\ProjectHandler.cs" />
+    <Compile Include="Handler\TimeHandler.cs" />
+    <Compile Include="Helper\Collections\Array.cs" />
+    <Compile Include="Helper\Collections\Groupings.cs" />
+    <Compile Include="Helper\Collections\ObservableCollection.cs" />
+    <Compile Include="Helper\DateTime\DateTimeExtensions.cs" />
+    <Compile Include="Helper\DateTime\DateTimeFormat.cs" />
+    <Compile Include="Helper\DateTime\ExcelSerialDateConverter.cs" />
+    <Compile Include="Helper\DateTime\GetAge.cs" />
+    <Compile Include="Helper\DateTime\Intersects.cs" />
+    <Compile Include="Helper\Numeric\DecimalExtensions.cs" />
+    <Compile Include="Helper\Numeric\DoubleExtensions.cs" />
+    <Compile Include="Helper\Numeric\FloatExtension.cs" />
+    <Compile Include="Helper\Numeric\IntExtensions.cs" />
+    <Compile Include="Helper\PostData.cs" />
+    <Compile Include="Helper\String\Format_Mask.cs" />
+    <Compile Include="Helper\String\IsValidEmail.cs" />
+    <Compile Include="Helper\String\StringContent.cs" />
+    <Compile Include="Helper\String\StringExtensions.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\Activity.cs" />
+    <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\Comment.cs" />
+    <Compile Include="Model\Company.cs" />
+    <Compile Include="Model\CountryCodes.cs" />
+    <Compile Include="Model\ErrorResponse.cs" />
+    <Compile Include="Model\Events.cs" />
+    <Compile Include="Model\File.cs" />
+    <Compile Include="Model\Link.cs" />
+    <Compile Include="Model\MessageReply.cs" />
+    <Compile Include="Model\Milestone.cs" />
+    <Compile Include="Model\Newproject.cs" />
+    <Compile Include="Model\Notebook.cs" />
+    <Compile Include="Model\Permissions.cs" />
+    <Compile Include="Model\Person.cs" />
+    <Compile Include="Model\Post.cs" />
+    <Compile Include="Model\Predecessor.cs" />
+    <Compile Include="Model\Project.cs" />
+    <Compile Include="Model\ProjectMailAddress.cs" />
+    <Compile Include="Model\Role.cs" />
+    <Compile Include="Model\Tag.cs" />
+    <Compile Include="Model\TeamworkObjectBase.cs" />
+    <Compile Include="Model\Time.cs" />
+    <Compile Include="Model\TimeEntry.cs" />
+    <Compile Include="Model\Tasklist.cs" />
+    <Compile Include="Model\TodoItem.cs" />
+    <Compile Include="Model\TodoList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Response\AccountResponse.cs" />
+    <Compile Include="Response\BaseResponse.cs" />
+    <Compile Include="Response\CategoriesResponse.cs" />
+    <Compile Include="Response\CompaniesResponse.cs" />
+    <Compile Include="Response\CompanyResponse.cs" />
+    <Compile Include="Response\MileStoneResponse.cs" />
+    <Compile Include="Response\MileStonesResponse.cs" />
+    <Compile Include="Response\MileStonesResponse.Isprivate2.cs" />
+    <Compile Include="Response\PeopleResponse.cs" />
+    <Compile Include="Response\PostResponse.cs" />
+    <Compile Include="Response\ProjectResponse.cs" />
+    <Compile Include="Response\ProjectsResponse.cs" />
+    <Compile Include="Response\StatsResponse.cs" />
+    <Compile Include="Response\TaskListsResponse.cs" />
+    <Compile Include="Response\TagResponse.cs" />
+    <Compile Include="Response\TaskListResponse.cs" />
+    <Compile Include="Response\TasksResponse.cs" />
+    <Compile Include="Response\TeamworkResponse.cs" />
+    <Compile Include="Response\TimeEntriesResponse.cs" />
+    <Compile Include="TeamWorkClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Dieses Projekt verweist auf mindestens ein NuGet-Paket, das auf diesem Computer fehlt. Aktivieren Sie die Wiederherstellung von NuGet-Paketen, um die fehlende Datei herunterzuladen. Weitere Informationen finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=322105". Die fehlende Datei ist "{0}".</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
